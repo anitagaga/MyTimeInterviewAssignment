@@ -2,7 +2,6 @@
 Library   SeleniumLibrary
 
 Resource          setups.robot
-
 Resource          poms/page_consumers.robot
 Resource          poms/page_searchResults.robot
 Resource          poms/page_expressCheckout_pickService.robot

@@ -12,7 +12,7 @@ Robot Framework 3.2.2
 3. Configure PATH (Add Python and Pip to PATH)
 4. Use Pip to install robot framework (pip3 install robotframework)
 5. Use Pip to install SeleniumLibrary (pip3 install robotframework-seleniumlibrary)
-6. Install Pycharm IDE and Intellibot plugin (alternative IntelliJ/PyCharm Plugin for Robot Automation Framework: https://github.com/mtrubs/intellibot)
+6. Install Pycharm IDE and Intellibot plugin 
 7. Download Selenium Browserdrivers for the browsers (safari has internal webdriver for automation)
 
 ## The Project Architecture
