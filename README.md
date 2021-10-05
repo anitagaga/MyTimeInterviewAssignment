@@ -6,12 +6,20 @@ Selenium 3.141.0
 Robot Framework 3.2.2
 
 ---
+### Steps to install development environment
+1. Install Python
+2. Install Pip
+3. Configure PATH (Add Python and Pip to PATH)
+4. Use Pip to install robot framework (pip3 install robotframework)
+5. Use Pip to install SeleniumLibrary (pip3 install robotframework-seleniumlibrary)
+6. Install Pycharm IDE and Intellibot plugin (alternative IntelliJ/PyCharm Plugin for Robot Automation Framework: https://github.com/mtrubs/intellibot)
+7. Download Selenium Browserdrivers for the browsers (safari has internal webdriver for automation)
 
 ## The Project Architecture
 
 At the most basic level, the architecture of the VendorLine Automation project is as follows:
 
-origin
+master
 	/resources
 		/components
 		/poms
@@ -20,7 +28,7 @@ origin
 	/tests
 		test1
 
-origin: MyTime-automation
+master: MyTime-automation
 * /tests: contains all test suite files of the project.
 * /assets: contains anything you need as input for your tests (json files, text files, csv files, templates...). 
 * /libraries: any other libraries (python, javascript...) needed to run tests can be installed here.

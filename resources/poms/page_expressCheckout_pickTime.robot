@@ -18,6 +18,11 @@ ${loc_span_price_pExpressCheckout_tPickTime}    xpath=//*[@class="variation-pric
 Verify Pick Time - Express Checkout Loaded
     [Documentation]    Verify if *Checkout Page - Pick Time page* loads.
     Wait Until Element Is Visible    ${loc_h2_pageTitle_pExpressCheckout_tPickTime}    ${WAIT}    Fail= Checkout Page - Pick Time page title is not visible. Checkout Page - Pick Time page might still be loading.
+
+Verify the selected date has more than 2 opened time spots on Pick Time - Express Checkout Page
+    [Arguments]    ${date}
+    ${selectedDate}=  Get WebElement    //div[@aria-label="Select date - ${date}"]
+    Click Element    ${selectedDate}
     Wait Until Element Is Visible    ${loc_div_openTime_pExpressCheckout_tPickTime}    ${WAIT}    Fail= Checkout Page - Open Slots are not visible. Checkout Page - Pick Time page might still be loading.
     ${timeSlots}=    Get WebElements    ${loc_div_openTime_pExpressCheckout_tPickTime}
     ${listLenght}=    Get Length    ${timeSlots}

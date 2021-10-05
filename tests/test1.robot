@@ -6,7 +6,8 @@ Documentation     https://planetbids.testrail.io/index.php?/suites/view/1&group_
 
 Resource          ../resources/main.robot
 
-Test Setup    Basic Selenium Test Setup
+Test Setup  Open Test - Sabre Cuts page
+#Basic Selenium Test Setup
 #Open Test - Sabre Cuts page
 Test Teardown     Basic Selenium Test Teardown
 
@@ -32,7 +33,6 @@ Test Case 001
     ...    12 - Service price is the same as the one displayed in the step before
     ...    13 - Staff selected is the staff chosen before
     [Tags]    functionality  test_case_id=001
-    [Setup]    Open Test - Sabre Cuts page
     #Input text into the Enter a business or service field on Consumers page    haircut
     #Clear Location on Consumers page
     #Input text into the Location field on Consumers page    San Francisco, CA
@@ -51,6 +51,7 @@ Test Case 001
     Press Select Time in the add-on modal on Pick A Service - Express Checkout page
     sleep    3s
     Verify Pick Time - Express Checkout Loaded
+    Verify the selected date has more than 2 opened time spots on Pick Time - Express Checkout Page    October 9, 2021
     sleep    3s
     Verify Right Side Panel Information on Pick Time - Express Checkout Page
     ...    ${service_name}    ${selectedStaff_addOnModal}    ${selectedPrice_addOnModal}
