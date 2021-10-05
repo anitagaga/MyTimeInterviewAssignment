@@ -29,7 +29,7 @@ origin: MyTime-automation
 	/poms: A Page Object Model, or POM, is meant to organize code for pages to be manageable and maintainable. POMs are implemented using Page Resource files so that they are easy to view and edit on Robot Framework. 
 ---
 
-## run Test cases
+## Run test cases
 
 1. Run test cases with the command below. It will create a new 'results' folder with results files (log.html, output.xml, report.html)
  

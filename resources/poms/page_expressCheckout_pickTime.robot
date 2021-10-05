@@ -21,7 +21,7 @@ Verify Pick Time - Express Checkout Loaded
     Wait Until Element Is Visible    ${loc_div_openTime_pExpressCheckout_tPickTime}    ${WAIT}    Fail= Checkout Page - Open Slots are not visible. Checkout Page - Pick Time page might still be loading.
     ${timeSlots}=    Get WebElements    ${loc_div_openTime_pExpressCheckout_tPickTime}
     ${listLenght}=    Get Length    ${timeSlots}
-    Should Be True    '${listLenght}'>='2'
+    Should Be True    ${listLenght} > 2
 
 Verify Right Side Panel Information on Pick Time - Express Checkout Page
     [Arguments]    ${expected_serviceName}    ${expected_staff}    ${expected_price}

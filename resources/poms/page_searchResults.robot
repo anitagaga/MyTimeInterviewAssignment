@@ -16,7 +16,7 @@ Verify search results number on Consumers page
     [Documentation]    It verifies that search results have more than 3 bussinesses displayed
     ${searchResultsElements}=    Get WebElements    ${loc_li_searchResults_pConsumers}
     ${listLenght}=    Get Length    ${searchResultsElements}
-    Should Be True    '${listLenght}'>='3'
+    Should Be True    ${listLenght} >= 3
 
 Open bussiness by name
     #[Arguments]    ${business_name}

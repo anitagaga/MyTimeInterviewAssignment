@@ -6,8 +6,8 @@ Documentation     https://planetbids.testrail.io/index.php?/suites/view/1&group_
 
 Resource          ../resources/main.robot
 
-Test Setup  Open Test - Sabre Cuts page
-#Basic Selenium Test Setup
+Test Setup    Basic Selenium Test Setup
+#Open Test - Sabre Cuts page
 Test Teardown     Basic Selenium Test Teardown
 
 *** Variables ***
@@ -32,6 +32,7 @@ Test Case 001
     ...    12 - Service price is the same as the one displayed in the step before
     ...    13 - Staff selected is the staff chosen before
     [Tags]    functionality  test_case_id=001
+    [Setup]    Open Test - Sabre Cuts page
     #Input text into the Enter a business or service field on Consumers page    haircut
     #Clear Location on Consumers page
     #Input text into the Location field on Consumers page    San Francisco, CA
